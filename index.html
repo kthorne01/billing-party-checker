@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consolidation Date Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Billing Party Checker</h1>
+  <p>**For AWS Org Import Onboardings Only**</p> 
+
+  <form id="consolidationForm">
+    <label for="consolidationDate">What is the scheduled date to onboard the customer?</label>
+    <input type="date" id="consolidationDate" name="consolidationDate" placeholder="e.g., 2025">
+    
+    <!-- Existing Button -->
+    <button type="submit">Check Invoice Issuer for This Month</button>
+    
+    <!-- New Button -->
+    <button type="button" id="nonOrgImportButton">Non-Org Import Invoicing Information</button>
+  </form>
+
+  <!-- Divs for displaying results -->
+  <div id="result"></div>
+  <div id="nonOrgResult"></div> <!-- New message area -->
+
+  <script src="script.js"></script>
+</body>
+</html>

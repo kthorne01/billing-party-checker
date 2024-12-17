@@ -18,9 +18,9 @@ form.addEventListener('submit', function (event) {
   // Logic for determining the message
   let message;
   if (day <= cutoffDay) {
-    message = `DoiT will invoice the customer for this month, and the customer does not need to pay AWS directly for any invoices issued after this date while onboarded with DoiT.`;
+    message = `We will invoice the customer for this month, and the customer does not need to pay AWS directly for any invoices issued after this date while onboarded with us.`;
   } else {
-    message = `AWS will invoice the customer for this month, and DoiT will take over the customer's AWS billing beginning with next month's billing period.`;
+    message = `AWS will invoice the customer for this month, and we will take over the customer's AWS billing beginning with next month's billing period.`;
   }
 
   // Display the result
@@ -33,8 +33,8 @@ const nonOrgButton = document.getElementById('nonOrgImportButton');
 
 nonOrgButton.addEventListener('click', function () {
   const nonOrgMessage = `Customers that onboard via Non-Org Import will always receive two invoices for the month they onboard.<br><br>
-  One invoice will be from AWS for the time of the month before the customer onboarded with DoiT.<br><br>
-  The second invoice will be from DoiT for the remaining days in the month after they joined the new organization we created for them.`;
+  One invoice will be from AWS for the time of the month before the customer onboarded with us.<br><br>
+  The second invoice will be from us for the remaining days in the month after they joined the new organization we created for them.`;
 
   // Display the Non-Org Import result
   nonOrgResultDiv.innerHTML = nonOrgMessage; // Use innerHTML to render <br> tags
